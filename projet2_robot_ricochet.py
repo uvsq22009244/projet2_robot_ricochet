@@ -17,3 +17,29 @@ import random
 
 ################################################
 # constantes
+
+HAUTEUR = 256
+LARGEUR = 256
+
+COULEUR_FOND = "grey50"
+
+################################################
+# variables globales
+
+
+################################################
+# fonctions
+
+
+# programme principale
+
+racine = tk.Tk()
+racine.title("Robot ricochet")
+
+# création des widgets
+
+canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
+
+canvas.grid()
+
+racine.mainloop()
