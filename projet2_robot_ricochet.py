@@ -18,8 +18,8 @@ import random
 ################################################
 # constantes
 
-HAUTEUR = 480
-LARGEUR = 480
+HAUTEUR = 490
+LARGEUR = 490
 COULEUR_FOND = "grey50"
 COTE = 30
 COULEUR_QUADR = "grey60"
