@@ -21,7 +21,7 @@ import random
 HAUTEUR = 400
 LARGEUR = 400
 COULEUR_FOND = "grey50"
-COTE = 16
+COTE = 30
 COULEUR_QUADR = "grey60"
 ################################################
 # variables globales
