@@ -51,6 +51,7 @@ racine.title("Robot ricochet")
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 #canvas.create_oval(racine, )
+#hey
 
 quadrillage()
 
