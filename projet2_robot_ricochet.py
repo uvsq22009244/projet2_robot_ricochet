@@ -18,8 +18,8 @@ import random
 ################################################
 # constantes
 
-HAUTEUR = 490
-LARGEUR = 490
+HAUTEUR = 480
+LARGEUR = 480
 COULEUR_FOND = "grey50"
 COTE = 30
 COULEUR_QUADR = "grey60"
@@ -42,6 +42,17 @@ def quadrillage():
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
 
+def dessin_robot():
+    pass
+
+def dessin_cible():
+    pass
+
+def deplacement_robot():
+    pass
+
+def compteur_deplacement():
+    pass
 # programme principale
 
 racine = tk.Tk()
@@ -51,7 +62,6 @@ racine.title("Robot ricochet")
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 #canvas.create_oval(racine, )
-cercle = canvas.create_oval((10, 10), (30, 30), fill="red", width=5, outline="red")
 
 quadrillage()
 
