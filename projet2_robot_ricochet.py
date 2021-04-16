@@ -61,7 +61,7 @@ racine.title("Robot ricochet")
 # création des widgets
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
-#canvas.create_oval(racine, )
+
 
 quadrillage()
 
