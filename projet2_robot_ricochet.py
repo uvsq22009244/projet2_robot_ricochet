@@ -18,11 +18,11 @@ import random
 ################################################
 # constantes
 
-HAUTEUR = 256
-LARGEUR = 256
+HAUTEUR = 480
+LARGEUR = 480
 
 COULEUR_FOND = "grey50"
-COTE = 16
+COTE = 30
 COULEUR_QUADR = "grey60"
 ################################################
 # variables globales
@@ -51,7 +51,7 @@ racine.title("Robot ricochet")
 # création des widgets
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
-canvas.create_oval(racine, )
+#canvas.create_oval(racine, )
 
 quadrillage()
 
