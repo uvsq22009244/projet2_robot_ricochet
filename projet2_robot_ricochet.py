@@ -65,12 +65,13 @@ racine = tk.Tk()
 racine.title("Robot ricochet")
 #création des widgets
 
-canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
+canvas = tk.Canvas(racine, width = HAUTEUR,
+                           height = LARGEUR, 
+                           bg = COULEUR_FOND)
 
 
 quadrillage()
+# placement des widgets
 
-#placement des widgets
 canvas.grid()
-
 racine.mainloop()
