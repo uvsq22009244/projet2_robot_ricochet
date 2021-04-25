@@ -58,7 +58,6 @@ def deplacement_robot():
     pass
 
 def compteur_deplacement():
-   
     pass
 #programme principal
 
