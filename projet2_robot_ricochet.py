@@ -45,20 +45,23 @@ def quadrillage():
 def dessin_robot():
     pass
 
+
+
 def dessin_cible():
     pass
 
 def deplacement_robot():
     pass
 
+
+
 def compteur_deplacement():
     pass
-# programme principale
+#programme principale
 
 racine = tk.Tk()
 racine.title("Robot ricochet")
-
-# création des widgets
+#réation des widgets
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 
