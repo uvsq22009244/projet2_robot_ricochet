@@ -13,7 +13,7 @@
 # import des modules
 
 import tkinter as tk
-import random 
+#import random #
 
 ################################################
 # constantes
@@ -42,26 +42,29 @@ def quadrillage():
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
 
-def dessin_robot():
-    pass
 
+def dessin_robot():
+    
+    pass
 
 
 def dessin_cible():
+    
     pass
+
 
 def deplacement_robot():
+    
     pass
-
-
 
 def compteur_deplacement():
+   
     pass
-#programme principale
+#programme principal
 
 racine = tk.Tk()
 racine.title("Robot ricochet")
-#réation des widgets
+#création des widgets
 
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 
