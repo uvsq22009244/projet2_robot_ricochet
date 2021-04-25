@@ -13,7 +13,7 @@
 # import des modules
 
 import tkinter as tk
-#import random #
+import random 
 
 ################################################
 # constantes
@@ -58,11 +58,14 @@ def deplacement_robot():
     pass
 
 def compteur_deplacement():
+    
     pass
+
 #programme principal
 
 racine = tk.Tk()
 racine.title("Robot ricochet")
+
 #création des widgets
 
 canvas = tk.Canvas(racine, width = HAUTEUR,
