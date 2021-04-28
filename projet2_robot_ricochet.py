@@ -82,6 +82,7 @@ canvas.create_rectangle(250,250,280,280 ,fill="blue")
 canvas.create_rectangle(60,60,90,90,fill="red")
 canvas.create_rectangle(160,160,190,190,fill="green")
 canvas.create_rectangle(30,30,60,60,fill="yellow")
+#il faut faire une fonction pour qu'ils soient placés au hasard 
 
 # placement des widgets
 
