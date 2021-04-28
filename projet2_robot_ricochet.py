@@ -74,11 +74,11 @@ canvas = tk.Canvas(racine, width = HAUTEUR,
 
 
 quadrillage()
-canvas.create_oval(90,90,120,120, fill="blue")
-canvas.create_oval(200,200,230,230, fill="red")
-canvas.create_oval(300,300,330,330, fill="green")
+canvas.create_oval(90,90,120,120,fill="blue")
+canvas.create_oval(200,200,230,230,fill="red")
+canvas.create_oval(300,300,330,330,fill="green")
 canvas.create_oval(400,400,430,430,fill="yellow")
-canvas.create_rectangle(250,250,280,280,fill="blue")
+canvas.create_rectangle(250,250,280,280 ,fill="blue")
 canvas.create_rectangle(60,60,90,90,fill="red")
 canvas.create_rectangle(160,160,190,190,fill="green")
 canvas.create_rectangle(30,30,60,60,fill="yellow")
