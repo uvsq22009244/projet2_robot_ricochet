@@ -23,6 +23,8 @@ LARGEUR = 480
 COULEUR_FOND = "grey50"
 COTE = 30
 COULEUR_QUADR = "grey60"
+couleur_robot = ["yellow", "red", "blue", "green"]
+couleur_cible = ["yellow", "red", "blue", "green"]
 ################################################
 # variables globales
 
@@ -42,49 +44,111 @@ def quadrillage():
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
 
-
-def dessin_robot():
+def trace_robot1():
+    global COTE, couleur_robot, x0, y0, a, b, element_robot
+    x0, y0 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
+    a, b = x0 + 1, y0 + 1
+    if a > x0 and b > y0:
+        couleur = random.choice(couleur_robot)
+        cercle1 = canvas.create_oval((x0*COTE, y0*COTE),(a*COTE, b*COTE),fill=couleur)
+        couleur_robot.remove(couleur)
     
-    pass
+    return cercle1
 
-
-def dessin_cible():
+def trace_robot2():
+    global COTE, couleur_robot, x1, y1, a1, b1
+    x1, y1 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
+    a1, b1 = x1 + 1, y1 + 1
+    if a1 > x1 and b1 > y1:
+        couleur = random.choice(couleur_robot)
+        cercle2 = canvas.create_oval((x1*COTE, y1*COTE),(a1*COTE, b1*COTE),fill=couleur)
+        couleur_robot.remove(couleur)
     
-    pass
+    return cercle2
 
+def trace_cible():
+    global COTE, couleur_cible
+    for i in range(4):
+        x1, y1 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
+        x2, y2= x1 + 1, y1 +1
+        if x2 > x1 and y2 > y1:
+            couleur = random.choice(couleur_cible)
+            carre = canvas.create_rectangle((x1*COTE, y1*COTE),(x2*COTE, y2*COTE),fill=couleur)
+            couleur_cible.remove(couleur)
 
-def deplacement_robot():
-    
-    pass
+    return[carre]
+
+def trace_mur():
+    global COTE
+    mur_horizontal_haut = canvas.create_line((0,0), (2*COTE,0), width = 10, fill = "black")
+    mur_horizontal_bas = canvas.create_line((2*COTE, 2*COTE),(0, 2*COTE), width = 10, fill = "black")
+    mur_vertical_droite = canvas.create_line((2*COTE, 0),(2*COTE, 2*COTE), width = 10, fill = "black")
+    mur_vertical_gauche = canvas.create_line((0,2*COTE), (0,0), width = 10, fill = "black")
+
+"""def coord_robot(event):
+    print(event.x, event.y)
+    return coord_robot"""
+
+def deplacement_robot1(event): 
+    # Déplacement du robot1 avec les touches directionnelles du clavier
+    global robot1
+    touche = event.keysym
+    print(touche, robot1)
+    if touche == "Up": # Déplacement du robot vers le haut
+        canvas.move(robot1, 0,-30)
+    elif touche == "Down": # Déplacement du robot vers le bas
+        canvas.move(robot1, 0, 30)
+    elif touche == "Right": # Déplacement du robot vers la droite
+        canvas.move(robot1, 30, 0)
+    elif touche == "Left": # Déplacement du robot vers la gauche
+        canvas.move(robot1, -30, 0)
+
+def deplacement_robot2(event): 
+    # Déplacement du robot avec les touches directionnelles du clavier
+    global robot2
+    touche = event.keysym
+    print(touche, "robot2")
+    if touche == "Up": # Déplacement du robot vers le haut
+        canvas.move(robot2, 0,-30)
+    elif touche == "Down": # Déplacement du robot vers le bas
+        canvas.move(robot2, 0, 30)
+    elif touche == "Right": # Déplacement du robot vers la droite
+        canvas.move(robot2, 30, 0)
+    elif touche == "Left": # Déplacement du robot vers la gauche
+        canvas.move(robot2, -30, 0)
 
 def compteur_deplacement():
-    
     pass
-
-#programme principal
+# programme principale
 
 racine = tk.Tk()
 racine.title("Robot ricochet")
 
-#création des widgets
+# création des widgets
 
-canvas = tk.Canvas(racine, width = HAUTEUR,
-                           height = LARGEUR, 
-                           bg = COULEUR_FOND)
+canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 
+# exécution des fonctions
 
 quadrillage()
-canvas.create_oval(90,90,120,120,fill="blue")
-canvas.create_oval(200,200,230,230,fill="red")
-canvas.create_oval(300,300,330,330,fill="green")
-canvas.create_oval(400,400,430,430,fill="yellow")
-canvas.create_rectangle(250,250,280,280 ,fill="blue")
-canvas.create_rectangle(60,60,90,90,fill="red")
-canvas.create_rectangle(160,160,190,190,fill="green")
-canvas.create_rectangle(30,30,60,60,fill="yellow")
-#il faut faire une fonction pour qu'ils soient placés au hasard 
+robot1 = trace_robot1()
+robot2 = trace_robot2()
+robot = [robot1, robot2]
+cible = trace_cible()
+trace_mur()
 
-# placement des widgets
-
+#placement des widgets
 canvas.grid()
+
+#canvas.bind("<Button-1>", coord_robot)
+canvas.bind_all("<Up>", deplacement_robot1)
+canvas.bind_all("<Down>", deplacement_robot1)
+canvas.bind_all("<Right>", deplacement_robot1)
+canvas.bind_all("<Left>", deplacement_robot1)
+
+canvas.bind_all("<Up>", deplacement_robot2)
+canvas.bind_all("<Down>", deplacement_robot2)
+canvas.bind_all("<Right>", deplacement_robot2)
+canvas.bind_all("<Left>", deplacement_robot2)
+
 racine.mainloop()
