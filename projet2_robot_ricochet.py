@@ -140,6 +140,19 @@ trace_mur()
 #placement des widgets
 canvas.grid()
 
+#creation des murs
+z=random.randint(0, 100)
+y=random.randint(100, 100)
+u=random.randint(0, 100)
+e=random.randint(100, 100)
+canvas.create_line(z, y, u, e, fill='black', width=3)
+
+z=random.randint(100, 100)
+y=random.randint(0, 100)
+u=random.randint(100, 100)
+e=random.randint(0, 100)
+canvas.create_line(z, y, u, e, fill='black', width=3)
+
 #canvas.bind("<Button-1>", coord_robot)
 canvas.bind_all("<Up>", deplacement_robot1)
 canvas.bind_all("<Down>", deplacement_robot1)
