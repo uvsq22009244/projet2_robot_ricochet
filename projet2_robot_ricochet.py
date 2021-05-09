@@ -25,11 +25,6 @@ COTE = 30
 COULEUR_QUADR = "grey60"
 couleur_robot = ["yellow", "red", "blue", "green"]
 couleur_cible = ["yellow", "red", "blue", "green"]
-liste_cible = []
-################################################
-# variables globales
-
-
 ################################################
 # fonctions
 
