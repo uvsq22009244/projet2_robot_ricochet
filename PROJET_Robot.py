@@ -20,9 +20,9 @@ import random
 
 HAUTEUR = 480
 LARGEUR = 480
-COULEUR_FOND = "grey50"
+COULEUR_FOND = "chocolate"
 COTE = 30
-COULEUR_QUADR = "grey60"
+COULEUR_QUADR = "grey50"
 ################################################
 # variables globales
 
@@ -34,12 +34,12 @@ def quadrillage():
     """Dessine un quadrillage dans le canevas avec des carrés de côté COTE"""
     y = 0
     while y <= HAUTEUR:
-        canvas.create_line((0, y), (LARGEUR, y), fill=COULEUR_QUADR)
+        canvas.create_line((0, y), (LARGEUR, y), fill=COULEUR_QUADR, width = 2)
         y += COTE
     i = 0
     while i * COTE <= LARGEUR:
         x = i * COTE
-        canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
+        canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR, width = 2)
         i += 1
 
 # programme principale
@@ -59,5 +59,6 @@ quadrillage()
 canvas.grid()
 
 fic = open("test.txt","w")
+fic.write("hello world")
 
 racine.mainloop()
