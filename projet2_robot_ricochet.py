@@ -59,7 +59,7 @@ def quadrillage():
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
 def trace_robot1():
-    global COTE, couleur_robot, x0, y0, a, b, element_robot, robot1_start_pos_X, robot1_start_pos_Y
+    global COTE, couleur_robot, x0, y0, a, b, robot1_start_pos_X, robot1_start_pos_Y
     x0, y0 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
     robot1_start_pos_X, robot1_start_pos_Y = x0, y0
     a, b = x0 + 1, y0 + 1
