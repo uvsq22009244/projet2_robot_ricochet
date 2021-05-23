@@ -1,5 +1,5 @@
 ################################################
-# Groupe 1 BI TD1
+# Groupe 1 BI TD1    
 # Princesse MOMO 
 # Alexandra SCHMIDT
 # Malak LALAMI
@@ -276,9 +276,6 @@ canvas.create_line((9*COTE,9*COTE),(9*COTE,7*COTE),fill = "black", width = 10)
 
 #ou peut être que un rectangle, car plus simple?
 canvas.create_rectangle((7*COTE,7*COTE),(9*COTE,9*COTE),fill = "white", width = 10)
-
-
-
 
 robot1 = trace_robot1()
 robot2 = trace_robot2()
