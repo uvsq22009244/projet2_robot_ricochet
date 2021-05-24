@@ -25,7 +25,7 @@ Pour que les robots apparaissent nous avons créé une fonction qui choisit alé
 
 Nous avons aussi crée une fonction qui fait apparaitre des murs à des endoits donnés, ces murs sont des obstacle pour les robots. 
 
-Nous avons élaboré une fonction qui dès lors que l'on clique sur un robot, on le selectionne. Cette fonction a été assosciée à une seconde fonction qui elle, permet de déplacer le robot selectionné grâce aux fleches de notre clavier. 
+Nous avons élaboré une fonction qui dès lors que l'on clique sur un robot, on le selectionne. Cette fonction a été assosciée à une seconde fonction qui elle, permet de déplacer le robot selectionné grâce aux fleches de notre clavier et ce robot ne devrait pas depasser les limites du canvas. 
 
 Une autre fonction permet aussi de compter le nombre de déplacement du robot sélectionné.
 
@@ -39,7 +39,8 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 ## <h2 id="bugs">Bugs</h2>
 ---
-
+-Le robot ssort du canvas quand on le déplace.
+-La fonction "la cible est atteinte" ne s'affiche pas.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
