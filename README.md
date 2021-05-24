@@ -1,5 +1,3 @@
-Ouvrir le readme sur vscode puis cliquer sur "Open preview to the side" en haut à droite.
-
 # robot_ricochet
 
 Bienvenue dans le readme de notre projet qui consiste à créer un plateau de jeu nommé robot ricochet.
