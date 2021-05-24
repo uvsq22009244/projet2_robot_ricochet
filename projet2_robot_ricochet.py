@@ -1,5 +1,5 @@
 ################################################
-# Groupe 1 BI TD1
+# Groupe 1 BI TD1    
 # Princesse MOMO 
 # Alexandra SCHMIDT
 # Malak LALAMI
@@ -20,7 +20,7 @@ COTE = 30
 COULEUR_QUADR = "grey60"
 couleur_robot = ["yellow", "red", "blue", "green"]
 couleur_cible = ["yellow", "red", "blue", "green"]
-liste_cible = []
+#liste_cible = []
 ################################################
 # variables globales
 nombre_mouvement_gen = 0
@@ -38,7 +38,6 @@ robot3_start_pos_Y = 0
 robot4_start_pos_X = 0
 robot4_start_pos_Y = 0
 
-
 ################################################
 # fonctions
 
@@ -55,7 +54,7 @@ def quadrillage():
         i += 1
 
 def trace_robot1():
-    global COTE, couleur_robot, x0, y0, a, b, robot1_start_pos_X, robot1_start_pos_Y
+    global COTE , couleur_robot , x0, y0 , a, b , robot1_start_pos_X , robot1_start_pos_Y
     x0, y0 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
     robot1_start_pos_X, robot1_start_pos_Y = x0, y0
     a, b = x0 + 1, y0 + 1
@@ -88,8 +87,8 @@ def trace_robot3():
         cercle3 = canvas.create_oval((x2*COTE, y2*COTE),(a2*COTE, b2*COTE),fill=couleur)
         couleur_robot.remove(couleur)
     print("robot3 :", x2, y2, a2, b2)
-    
     return cercle3
+
 def trace_robot4():
     global COTE, couleur_robot, x3, y3, a3, b3, robot4_start_pos_X, robot4_start_pos_Y
     x3, y3 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
@@ -111,7 +110,7 @@ def trace_cible():
             couleur = random.choice(couleur_cible)
             carre = canvas.create_rectangle((x*COTE, y*COTE),(c*COTE, d*COTE),fill=couleur)
             couleur_cible.remove(couleur)
-            liste_cible.append(carre)
+            #liste_cible.append(carre)
     return carre
 
 def clic(event):
@@ -275,9 +274,6 @@ canvas.create_line((9*COTE,9*COTE),(9*COTE,7*COTE),fill = "black", width = 10)
 
 #ou peut être que un rectangle, car plus simple?
 canvas.create_rectangle((7*COTE,7*COTE),(9*COTE,9*COTE),fill = "white", width = 10)
-
-
-
 
 robot1 = trace_robot1()
 robot2 = trace_robot2()
