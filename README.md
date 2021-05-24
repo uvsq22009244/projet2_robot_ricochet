@@ -33,7 +33,11 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 ## <h2 id="controles">Contrôles</h2>
 ---
+-Un clic normal(gauche) de la souris pour selectionner un robot.
 
+-Les flèches du clavier (haut, bas, droite, gauche° pour déplacer les robots.
+
+-La touche espace du clavier pour que le robot utilisé retourne à sa position initiale.
 
 ## <h2 id="bugs">Bugs et problèmes non résolus</h2>
 ---
@@ -41,9 +45,17 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 -La fonction "la cible est atteinte" n'a pas été créée.
 
+-Par moment, il se peut que soit la cible soit un des robots se trouvent dans le carré central.
+
+-Les robots se déplacent case par case alors que normalement ils se deplacent en ligne tant qu'il n'y a pas d'obstacle.
+
+-La cible ne disparaît pas quand le robot l'atteint.
+
 ## <h2 id="libs">Librairies externes</h2>
 ---
 **Ce projet utilise:**  
 -TKinter
+
+-Random
 
 [Haut de la page](#top)
