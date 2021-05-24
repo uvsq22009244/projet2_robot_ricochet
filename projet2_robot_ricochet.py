@@ -72,7 +72,6 @@ canvas = tk.Canvas(racine, width = HAUTEUR,
                            height = LARGEUR, 
                            bg = COULEUR_FOND)
 
-canvas.create_oval()
 
 quadrillage()
 # placement des widgets
