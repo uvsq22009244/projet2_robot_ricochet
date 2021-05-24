@@ -41,7 +41,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 ---
 -Le robot ssort du canvas quand on le déplace.
 
--La fonction "la cible est atteinte" ne s'affiche pas.
+-La fonction "la cible est atteinte" n'a pas été créée.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
