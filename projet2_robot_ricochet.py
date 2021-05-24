@@ -11,6 +11,7 @@
 # import des modules
 import tkinter as tk
 import random 
+
 ################################################
 # constantes
 HAUTEUR = 480
@@ -20,7 +21,7 @@ COTE = 30
 COULEUR_QUADR = "grey60"
 couleur_robot = ["yellow", "red", "blue", "green"]
 couleur_cible = ["yellow", "red", "blue", "green"]
-liste_cible = []
+
 ################################################
 # variables globales
 nombre_mouvement_gen = 0
@@ -57,7 +58,6 @@ score=0
 
 ################################################
 # fonctions
-
 
 def quadrillage():
     """Dessine un quadrillage dans le canevas avec des carrés de côté COTE"""
@@ -150,8 +150,7 @@ def trace_cible():
     couleur_cible_finale = random.choice(couleur_cible)
     carre = canvas.create_rectangle((x_cible*COTE, y_cible*COTE),((x_cible+1)*COTE, (y_cible+1)*COTE),fill=couleur_cible_finale)
     couleur_cible.remove(couleur_cible_finale)
-    liste_cible.append(carre)
-    return[carre]
+    return carre
 
 n_robot = 0
 
@@ -404,22 +403,15 @@ def resetMap():
     canvas.moveto(robot2, x1*30, y1*30)
     canvas.moveto(robot3, x2*30, y2*30)
     canvas.moveto(robot4, x3*30, y3*30)
-    
-
-
-
-
 
 # programme principale
 racine = tk.Tk()
 racine.title("Robot ricochet")
+
 # création des widgets
 canvas = tk.Canvas(racine, width = HAUTEUR, height = LARGEUR, bg = COULEUR_FOND)
 
 # exécution des fonctions
-
-
-
 
 quadrillage()
 
@@ -458,15 +450,6 @@ canvas.create_line((0,0),(LARGEUR,0),fill = "black", width = 10)
 canvas.create_line((LARGEUR,0),(LARGEUR,HAUTEUR),fill = "black", width = 10)
 canvas.create_line((0,HAUTEUR),(LARGEUR,HAUTEUR),fill = "black", width = 10)
 
-#mur en carré au centre
-#canvas.create_line((7*COTE,7*COTE),(9*COTE,7*COTE),fill = "black", width = 10)
-#canvas.create_line((7*COTE,7*COTE),(7*COTE,9*COTE),fill = "black", width = 10)
-#canvas.create_line((7*COTE,9*COTE),(9*COTE,9*COTE),fill = "black", width = 10)
-#canvas.create_line((9*COTE,9*COTE),(9*COTE,7*COTE),fill = "black", width = 10)
-
-#ou peut être que un rectangle, car plus simple?
-#canvas.create_rectangle((7*COTE,7*COTE),(9*COTE,9*COTE),fill = "white", width = 10)
-
 cible = trace_cible()
 robot1 = trace_robot1()
 robot2 = trace_robot2()
@@ -476,6 +459,8 @@ robot = [robot1, robot2, robot3, robot4]
 
 #placement des widgets
 canvas.grid()
+
+#exécution des évènements
 canvas.bind("<Button-1>", clic)
 canvas.bind_all("<Up>", deplacement_robot)
 canvas.bind_all("<Down>", deplacement_robot)
