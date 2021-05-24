@@ -8,12 +8,13 @@ Le but du jeu est donc qu'un robot atteigne sa cible désignée en réussisant �
 
 ## <h2 id="top">Sommaire</h2>
 ---
--[Programme](#implements)  
+-[Programme](#programme)  
 -[Contrôles](#controles)  
 -[Bugs](#bugs)  
+-[Problèmes non résolus](#problemes)  
 -[Librairies externes](#libs)
 
-## <h2 id="implements">Programme</h2>
+## <h2 id="programme">Programme</h2>
 ---
 Le programme quand on l'excécute crée un canvas dans lequel se trouvent des murs en forme d'angle droit, des robots respectivement jaune, bleu, rouge et vert, leur cible et enfin un carré central. 
 
@@ -40,6 +41,9 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 -Le robot sort du canvas quand on le déplace.
 
 -La fonction "la cible est atteinte" n'a pas été créée.
+
+## <h2 id="problemes">Problèmes non résolus</h2>
+---
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
