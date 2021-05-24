@@ -51,7 +51,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 -La cible ne disparaît pas quand le robot l'atteint.
 
--Pour selectionner le robot et le déplacer on ne peut pas simplement cliquer sur le robot il faut aussi que la souris reste sur le robot pour qu'il commence à se déplacer.
+-Pour selectionner le robot et le déplacer on ne peut pas simplement cliquer sur le robot il faut aussi que la souris reste sur la position intiale robot pour qu'il se déplace, il ne faut donc pas bouger la souris sinon le robot ne se déplace pas.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
