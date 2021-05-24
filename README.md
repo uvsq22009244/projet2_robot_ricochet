@@ -35,7 +35,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 ---
 -Un clic normal(gauche) de la souris pour selectionner un robot.
 
--Les flèches du clavier (haut, bas, droite, gauche° pour déplacer les robots.
+-Les flèches du clavier (haut, bas, droite, gauche) pour déplacer les robots.
 
 -La touche espace du clavier pour que le robot utilisé retourne à sa position initiale.
 
@@ -50,6 +50,8 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 -Les robots se déplacent case par case alors que normalement ils se deplacent en ligne tant qu'il n'y a pas d'obstacle.
 
 -La cible ne disparaît pas quand le robot l'atteint.
+
+-Pour selectionner le robot et le déplacer on ne peut pas simplement cliquer sur le robot il faut aussi que la souris reste sur le robot pour qu'il commence à se déplacer.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
