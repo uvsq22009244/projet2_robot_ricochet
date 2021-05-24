@@ -43,10 +43,6 @@ robot4_start_pos_Y = 0
 # fonctions
 
 
-
-
-
-
 def quadrillage():
     """Dessine un quadrillage dans le canevas avec des carrés de côté COTE"""
     y = 0
@@ -58,7 +54,7 @@ def quadrillage():
         x = i * COTE
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
-        
+
 def trace_robot1():
     global COTE, couleur_robot, x0, y0, a, b, robot1_start_pos_X, robot1_start_pos_Y
     x0, y0 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
