@@ -132,7 +132,7 @@ def deplacement_robot(event):
         resetMap()
     
     if (X >= x0 and X <= a):
-            if Y >= y0 and Y <= b :
+            if Y >= y0 and Y <= b:
                 if touche == "Up": # Déplacement du robot vers le haut
                     canvas.move(robot1, 0,-30)
                     compteur_deplacement("up")
