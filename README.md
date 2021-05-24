@@ -31,7 +31,7 @@ Une autre fonction permet aussi de compter le nombre de déplacement du robot s�
 
 Enfin, une fonction permet d'indiquer que la cible est atteinte et une autre fait disparaitre la cible quand cette dernière est atteinte. 
 
-Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le canvas quadrillé avec les robots, les murs et la cible apparaissent, pour jouer au jeu il suffit donc à l'utilisateur de cliquer sur le robot de son choix et de le deplacer à travers le canvas en essayant de surmonter les obstacles jusqu'à enfin atteindre la cible et voir un message indiquant " la cible est atteinte" apparaître et cette dernière disparaîtra. L'utilisateur peut aussi s'il el souhaite faire revenir le robot à sa position initiale en appuyant sur la touche espace de son clavier.
+Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le canvas quadrillé avec les robots, les murs et la cible apparaissent, pour jouer au jeu il suffit donc à l'utilisateur de cliquer sur le robot de son choix et de laisser la souris positionnée sur le robot pour pouvoir le deplacer à travers le canvas en essayant de surmonter les obstacles jusqu'à enfin atteindre la cible et voir un message indiquant " la cible est atteinte" apparaître et cette dernière disparaîtra. L'utilisateur peut aussi s'il el souhaite faire revenir le robot à sa position initiale en appuyant sur la touche espace de son clavier.
 
 ## <h2 id="controles">Contrôles</h2>
 ---
