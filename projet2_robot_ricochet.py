@@ -42,11 +42,6 @@ robot4_start_pos_Y = 0
 ################################################
 # fonctions
 
-
-
-
-
-
 def quadrillage():
     """Dessine un quadrillage dans le canevas avec des carrés de côté COTE"""
     y = 0
@@ -58,6 +53,7 @@ def quadrillage():
         x = i * COTE
         canvas.create_line((x, 0), (x, HAUTEUR), fill=COULEUR_QUADR)
         i += 1
+
 def trace_robot1():
     global COTE, couleur_robot, x0, y0, a, b, robot1_start_pos_X, robot1_start_pos_Y
     x0, y0 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
@@ -69,6 +65,7 @@ def trace_robot1():
         couleur_robot.remove(couleur)
     print("robot1 :", x0, y0, a, b)
     return cercle1
+
 def trace_robot2():
     global COTE, couleur_robot, x1, y1, a1, b1, robot2_start_pos_X, robot2_start_pos_Y
     x1, y1 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
@@ -80,6 +77,7 @@ def trace_robot2():
         couleur_robot.remove(couleur)
     print("robot2 :", x1, y1, a1, b1)
     return cercle2
+
 def trace_robot3():
     global COTE, couleur_robot, x2, y2, a2, b2, robot3_start_pos_X, robot3_start_pos_Y
     x2, y2 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
@@ -103,17 +101,18 @@ def trace_robot4():
         couleur_robot.remove(couleur)
     print("robot4 :", x3, y3, a3, b3)
     return cercle4
+
 def trace_cible():
     global COTE, couleur_cible, liste_cible
     for i in range(1):
-        x1, y1 = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
-        x2, y2= x1 + 1, y1 +1
-        if x2 > x1 and y2 > y1:
+        x, y = random.randint(0,LARGEUR//COTE - 1), random.randint(0,HAUTEUR//COTE - 1)
+        c, d = x + 1, y +1
+        if c > x and d > y:
             couleur = random.choice(couleur_cible)
-            carre = canvas.create_rectangle((x1*COTE, y1*COTE),(x2*COTE, y2*COTE),fill=couleur)
+            carre = canvas.create_rectangle((x*COTE, y*COTE),(c*COTE, d*COTE),fill=couleur)
             couleur_cible.remove(couleur)
             liste_cible.append(carre)
-    return[carre]
+    return carre
 
 def clic(event):
     # position du pointeur de la souris
@@ -132,7 +131,7 @@ def deplacement_robot(event):
     if touche == "space":
         resetMap()
     
-    if X >= x0 and X <= a :
+    if (X >= x0 and X <= a):
             if Y >= y0 and Y <= b :
                 if touche == "Up": # Déplacement du robot vers le haut
                     canvas.move(robot1, 0,-30)
