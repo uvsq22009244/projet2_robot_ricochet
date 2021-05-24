@@ -33,7 +33,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 ## <h2 id="controles">Contrôles</h2>
 ---
-tu ecris ce que tu veux
+
 
 ## <h2 id="bugs">Bugs</h2>
 ---
