@@ -41,17 +41,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 ## <h2 id="bugs">Bugs et problèmes non résolus</h2>
 ---
--Le robot sort du canvas quand on le déplace.
-
--La fonction "la cible est atteinte" n'a pas été créée.
-
--Par moment, il se peut que soit la cible soit un des robots se trouvent dans le carré central.
-
--Les robots se déplacent case par case alors que normalement ils se deplacent en ligne tant qu'il n'y a pas d'obstacle.
-
--La cible ne disparaît pas quand le robot l'atteint.
-
--Pour selectionner le robot et le déplacer on ne peut pas simplement cliquer sur le robot il faut aussi que la souris reste sur la position initiale robot pour qu'il se déplace, il ne faut donc pas bouger la souris sinon le robot ne se déplace pas.
+-Aucun bug et problème à signaler.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
