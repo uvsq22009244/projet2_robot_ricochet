@@ -40,6 +40,7 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 ## <h2 id="bugs">Bugs</h2>
 ---
 -Le robot ssort du canvas quand on le déplace.
+
 -La fonction "la cible est atteinte" ne s'affiche pas.
 
 ## <h2 id="libs">Librairies externes</h2>
