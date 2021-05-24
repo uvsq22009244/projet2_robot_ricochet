@@ -29,7 +29,7 @@ Une autre fonction permet aussi de compter le nombre de déplacement du robot s�
 
 Enfin, une fonction permet d'indiquer que la cible est atteinte et une autre fait disparaitre la cible quand cette dernière est atteinte. 
 
-Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le canvas quadrillé avec les robots, les murs et la cible apparaissent. Pour jouer au jeu il suffit donc à l'utilisateur de cliquer sur le robot de son choix et de laisser la souris positionnée sur le robot pour pouvoir le deplacer à travers le canvas en essayant de surmonter les obstacles jusqu'à enfin atteindre la cible et voir un message indiquant " la cible est atteinte" apparaître et cette dernière disparaîtra. L'utilisateur peut aussi s'il le souhaite faire revenir le robot à sa position initiale en appuyant sur la touche espace de son clavier.
+Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le canvas quadrillé avec les robots, les murs et la cible apparaissent. Pour jouer au jeu il suffit donc à l'utilisateur de cliquer sur le robot de son choix et de laisser la souris positionnée sur le robot pour pouvoir le deplacer à travers le canvas en essayant de surmonter les obstacles jusqu'à enfin atteindre la cible et voir un message indiquant " la cible est atteinte" apparaître et cette dernière disparaîtra. L'utilisateur peut aussi s'il le souhaite faire revenir le robot à sa position initiale en appuyant sur la touche espace de son clavier et le score indique le nombre de déplacement.
 
 ## <h2 id="controles">Contrôles</h2>
 ---
@@ -41,17 +41,9 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 
 ## <h2 id="bugs">Bugs et problèmes non résolus</h2>
 ---
--Le robot sort du canvas quand on le déplace.
-
--La fonction "la cible est atteinte" n'a pas été créée.
-
--Par moment, il se peut que soit la cible soit un des robots se trouvent dans le carré central.
-
--Les robots se déplacent case par case alors que normalement ils se deplacent en ligne tant qu'il n'y a pas d'obstacle.
-
 -La cible ne disparaît pas quand le robot l'atteint.
 
--Pour selectionner le robot et le déplacer on ne peut pas simplement cliquer sur le robot il faut aussi que la souris reste sur la position initiale robot pour qu'il se déplace, il ne faut donc pas bouger la souris sinon le robot ne se déplace pas.
+-Par moment, le robot traverse un mur.
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
