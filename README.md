@@ -10,8 +10,7 @@ Le but du jeu est donc qu'un robot atteigne sa cible désignée en réussisant �
 ---
 -[Programme](#programme)  
 -[Contrôles](#controles)  
--[Bugs](#bugs)  
--[Problèmes non résolus](#problemes)  
+-[Bugs et problèmes non résolus](#bugs)  
 -[Librairies externes](#libs)
 
 ## <h2 id="programme">Programme</h2>
@@ -36,14 +35,11 @@ Ainsi, lorsque l'utilsateur clique sur le bouton pour executer le programme, le 
 ---
 
 
-## <h2 id="bugs">Bugs</h2>
+## <h2 id="bugs">Bugs et problèmes non résolus</h2>
 ---
 -Le robot sort du canvas quand on le déplace.
 
 -La fonction "la cible est atteinte" n'a pas été créée.
-
-## <h2 id="problemes">Problèmes non résolus</h2>
----
 
 ## <h2 id="libs">Librairies externes</h2>
 ---
