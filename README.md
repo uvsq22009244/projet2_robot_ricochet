@@ -1,3 +1,5 @@
+Ouvrir le readme sur vscode puis cliquer sur "Open preview to the side" en haut à droite.
+
 # robot_ricochet
 
 Bienvenue dans le readme de notre projet qui consiste à créer un plateau de jeu nommé robot ricochet.
@@ -8,12 +10,12 @@ Le but du jeu est donc qu'un robot atteigne sa cible désignée en réussisant �
 
 ## <h2 id="top">Sommaire</h2>
 ---
--[Implémentations](#implements)  
+-[Programme](#implements)  
 -[Contrôles](#controles)  
 -[Bugs](#bugs)  
 -[Librairies externes](#libs)
 
-## <h2 id="implements">Implémentations</h2>
+## <h2 id="implements">Programme</h2>
 ---
 Le programme quand on l'excécute crée un canvas dans lequel se trouvents des murs en forme d'angle droit, des robots respectivement jaune, bleu, rouge et vert, leur cible et enfin un carré central. 
 
